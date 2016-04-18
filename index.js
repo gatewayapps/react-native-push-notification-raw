@@ -162,7 +162,7 @@ Notifications._onNotification = function(data, isFromBackground = null) {
 				data: (
 					typeof data.data !== 'undefined'
 					? data.data
-					: {} 
+					: data
 				),
 			});
 		}
