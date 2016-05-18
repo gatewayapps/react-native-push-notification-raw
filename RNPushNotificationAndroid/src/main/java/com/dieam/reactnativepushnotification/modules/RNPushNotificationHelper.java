@@ -42,13 +42,13 @@ public class RNPushNotificationHelper {
             return;
         }
 
-        Intent mainIntent = new Intent(mContext, intentClass);
+        /*Intent mainIntent = new Intent(mContext, intentClass);
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         mainIntent.putExtra("rebooting", true);
 
-        mContext.startActivity(mainIntent);
+        mContext.startActivity(mainIntent);*/
 
-        /*Resources res = mApplication.getResources();
+        Resources res = mApplication.getResources();
         String packageName = mApplication.getPackageName();
 
         NotificationCompat.Builder notification = new NotificationCompat.Builder(mContext)
@@ -131,7 +131,7 @@ public class RNPushNotificationHelper {
         info.defaults |= Notification.DEFAULT_SOUND;
         info.defaults |= Notification.DEFAULT_LIGHTS;
 
-        notificationManager.notify(notificationID, info);*/
+        notificationManager.notify(notificationID, info);
     }
 
     public void cancelAll() {
